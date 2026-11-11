@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>A conexão entre dois corações ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-s="intro" class="night">
+<div class="layer" id="night"></div><div class="layer" id="storm"></div><div class="layer" id="day"></div>
+<div class="layer neb a"></div><div class="layer neb b"></div>
+<div class="layer" id="stars"></div><div class="layer" id="rain"></div><div class="layer" id="flash"></div>
+<div id="sun"></div><div id="hills"></div><div id="flowers"></div>
+
+<div id="photos">
+  <figure class="frame s"><div class="tilt"><div class="fl"><div class="ph">S</div><img src="foto01.jpeg" alt="Samuel" onerror="this.remove()"></div></div><figcaption>Samuel</figcaption></figure>
+  <figure class="frame v"><div class="tilt"><div class="fl"><div class="ph">V</div><img src="foto02.jpeg" alt="Vitória" onerror="this.remove()"></div></div><figcaption>Vitória</figcaption></figure>
+  <div id="bond" aria-hidden="true">❤</div>
+  <div id="crack"></div>
+</div>
+
+<main id="ui">
+  <section class="panel" data-p="intro"><div class="glass">
+    <h1>A conexão entre dois corações</h1><p class="sub">Um pequeno jogo, feito para a Vitória.</p>
+    <button class="btn" data-go="p1">Começar nossa história</button></div></section>
+
+  <section class="panel" data-p="p1"><div class="glass">
+    <p class="msg">“Antes de existir um nós, existiam duas histórias. Dois caminhos diferentes que, em algum momento, se encontraram.”</p>
+    <button class="btn" data-go="p2">Continuar</button></div></section>
+
+  <section class="panel" data-p="p2"><div class="glass">
+    <p class="msg">“O que acontece quando duas pessoas que se amam decidem seguir caminhos diferentes?”</p>
+    <div class="col"><button class="btn big" data-act="split">Separar os corações</button>
+    <button class="btn big gold" data-go="union">Manter os corações unidos</button></div></div></section>
+
+  <section class="panel" data-p="split"><div class="glass">
+    <p class="msg">“Quando dois corações se afastam, até o mundo parece perder suas cores.”</p>
+    <button class="btn gold" data-go="union">Tentar restaurar a conexão</button></div></section>
+
+  <section class="panel" data-p="union"><div class="glass">
+    <p class="msg">“Existem conexões que merecem ser preservadas, independentemente da distância.”</p>
+    <button class="btn" data-go="time" data-veil>Continuar</button></div></section>
+
+  <section class="panel" data-p="time"><div class="glass">
+    <h2>Nossa história</h2>
+    <div class="tl"><b>02/09/2026</b> — O início da nossa história.</div>
+    <div id="count"><div><b id="cd">0</b>dias</div><div><b id="ch">0</b>horas</div><div><b id="cm">0</b>minutos</div><div><b id="cs">0</b>segundos</div></div>
+    <button class="btn" data-go="final" data-veil>Continuar</button></div></section>
+
+  <section class="panel" data-p="final"><div class="glass">
+    <p class="msg">Ainda falta uma última coisa.</p>
+    <button class="btn gold" data-go="letter">Samuel tem algo para te dizer…</button></div></section>
+
+  <section class="panel" data-p="letter"><div class="glass">
+    <article id="letter" title="Toque para mostrar a carta inteira"><p id="typed"></p></article>
+    <button class="btn gold" id="again" data-act="restart" hidden>Reviver nossa história</button></div></section>
+</main>
+
+<div id="fx"></div>
+<div id="veil"></div>
+<button id="restart" data-act="restart" aria-label="Reiniciar o jogo">↺ Reiniciar</button>
+<script src="script.js"></script>
+</body>
+</html>
